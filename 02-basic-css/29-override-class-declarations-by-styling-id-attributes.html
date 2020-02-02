@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Override Class Declarations by Styling ID Attributes</title>
+  </head>
+  <body>
+    <code>
+      <section id="instructions">
+        <p>
+          Give your <code>h1</code> element the <code>id</code> attribute of
+          <code>orange-text</code>. Remember, id styles look like this:
+        </p>
+        <p><code>&lt;h1 id="orange-text"&gt;</code></p>
+        <p>
+          Leave the <code>blue-text</code> and <code>pink-text</code> classes on
+          your <code>h1</code> element.
+        </p>
+        <p>
+          Create a CSS declaration for your <code>orange-text</code> id in your
+          <code>style</code> element. Here's an example of what this looks like:
+        </p>
+        <p></p>
+        <pre
+          class=" language-css"
+        ><code class=" language-css"><span class="token selector">#brown-text</span> <span class="token punctuation">{</span>
+          <span class="token property">color</span><span class="token punctuation">:</span> brown<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        </code></pre>
+        <p></p>
+        <p>
+          <strong>Note:</strong> It doesn't matter whether you declare this CSS
+          above or below pink-text class, since id attribute will always take
+          precedence.
+        </p>
+      </section>
+    </code>
+    <hr />
+
+    <style>
+      body {
+        background-color: black;
+        font-family: monospace;
+        color: green;
+      }
+      .pink-text {
+        color: pink;
+      }
+      .blue-text {
+        color: blue;
+      }
+      #orange-text {
+        color: orange;
+      }
+    </style>
+    <h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+  </body>
+</html>
