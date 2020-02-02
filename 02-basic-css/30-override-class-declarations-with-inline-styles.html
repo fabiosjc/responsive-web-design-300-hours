@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Override Class Declarations with Inline Styles</title>
+  </head>
+  <body>
+    <code>
+      <section id="instructions">
+        <p>
+          Use an inline style to try to make our <code>h1</code> element white.
+          Remember, in line styles look like this:
+        </p>
+        <p><code>&lt;h1 style="color: green;"&gt;</code></p>
+        <p>
+          Leave the <code>blue-text</code> and <code>pink-text</code> classes on
+          your <code>h1</code> element.
+        </p>
+      </section>
+    </code>
+    <hr />
+
+    <style>
+      body {
+        background-color: black;
+        font-family: monospace;
+        color: green;
+      }
+      .pink-text {
+        color: pink;
+      }
+      .blue-text {
+        color: blue;
+      }
+      #orange-text {
+        color: orange;
+      }
+    </style>
+    <h1 style="color: white;" id="orange-text" class="pink-text blue-text">
+      Hello World!
+    </h1>
+  </body>
+</html>
